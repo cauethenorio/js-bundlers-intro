@@ -1,0 +1,22 @@
+## Webpack
+
+.left-column[
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+#### - exemplo avançado
+#### - code splitting
+#### - etc
+
+]
+
+.right-column[
+
+#### * Source maps
+#### * Watch e live-reload (webpack-dev-server)
+#### * Shim para libs não compatíveis com CommonJs ou AMD
+#### * Loader de arquivos (converte para base64 ou copia para dir publico)
+#### * Integração com gulp, grunt
+
+]

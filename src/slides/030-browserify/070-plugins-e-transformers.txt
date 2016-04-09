@@ -1,0 +1,34 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+#### - exemplo
+#### - source maps
+#### - mais de um bundle
+#### - watchify
+#### - plugins e transformers
+
+]
+
+.right-column[
+
+### transpilação
+
+É possível utilizar plugins e transformers para converter de um tipo de código para outro.
+
+Por exemplo Typescript:
+
+```bash
+$ npm install tsify
+$ browserify main.ts -p [ tsify --noImplicitAny ] > bundle.js
+```
+
+### minificação
+
+Através do plugin `minifyify`:
+
+```bash
+browserify main.js -d -p [minifyify --map bundle.js.map --output bundle.js.map] > bundle.js
+```
+]

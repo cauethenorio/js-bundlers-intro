@@ -1,0 +1,29 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+#### - exemplo
+#### - source maps
+#### - mais de um bundle
+#### - watchify
+
+]
+
+.right-column[
+
+O `watchify` recompila o bundle assim que qualquer arquivo de módulo utilizado é alterado.
+
+Para instalar:
+```bash
+$ npm install watchify
+```
+
+Para usar:
+```bash
+$ watchify main.js -o bundle.js -v
+259446 bytes written to bundle.js (0.45 seconds)
+259447 bytes written to bundle.js (0.05 seconds)
+```
+
+]

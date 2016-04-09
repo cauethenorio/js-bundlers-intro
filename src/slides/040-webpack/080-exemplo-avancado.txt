@@ -1,0 +1,32 @@
+# Webpack
+
+.left-column[
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+#### - exemplo avançado
+
+]
+
+.right-column[
+
+#### src/index.html
+
+```html
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My App</title>
+</head>
+<body>
+  <h3 ng-show="false">Loading...</h3>
+  <app></app>
+</body>
+</html>
+```
+
+]

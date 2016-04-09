@@ -1,0 +1,5 @@
+# Webpack
+
+#### - bundle de assets
+
+.full-image[![assets pipeling](https://webpack.github.io/assets/what-is-webpack.png)]

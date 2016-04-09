@@ -1,0 +1,43 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+#### - exemplo
+#### - source maps
+#### - mais de um bundle
+#### - watchify
+#### - plugins e transformers
+#### - integração com npm scripts
+#### - integração com grunt
+
+]
+
+.right-column[
+
+#### Exemplo de integração com grunt:
+
+```javascript
+module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browserify');
+
+  grunt.registerTask('default', ['browserify', 'watch']);
+
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    browserify: {
+      main: {
+        src: 'js/main.js',
+        dest: 'js/bundle.js'
+      }
+    },
+    watch: {
+      files: 'js/*',
+      tasks: ['default']
+    }
+  });
+}
+```
+
+]

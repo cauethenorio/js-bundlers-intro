@@ -1,0 +1,6 @@
+# Diferenças
+
+## Browserify vs Webpack
+
+#### * Browserify é mais enxuto e deixa diferentes funcionalidades para ecosistema de plugins
+#### * Webpack tenta resolver os problemas sozinho, mas recebe ajuda dos plugins

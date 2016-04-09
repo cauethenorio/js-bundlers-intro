@@ -1,0 +1,36 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+#### - exemplo
+#### - source maps
+#### - mais de um bundle
+#### - watchify
+#### - plugins e transformers
+#### - integração com npm scripts
+
+]
+
+.right-column[
+
+Dentro da chave `scripts` do seu `package.json`:
+
+```json
+{
+ 	"build": "browserify main.js -o bundle.js",
+ 	"watch": "watchify main.js -o bundle.js --debug --verbose",
+}
+```
+
+Durante dev:
+```bash
+$ npm run watch
+```
+
+No deploy:
+```bash
+$ npm run build
+```
+
+]

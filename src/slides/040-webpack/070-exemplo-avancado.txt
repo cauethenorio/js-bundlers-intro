@@ -1,0 +1,38 @@
+# Webpack
+
+.left-column[
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+#### - exemplo avançado
+
+]
+
+.right-column[
+
+#### src/main.js
+
+```javascript
+import angular from 'angular';
+
+// css globais
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
+// css do modulo
+import './src/assets/css/commons.styl';
+import './src/assets/css/fonts.css';
+
+// templates angular
+import './src/partials/base.html';
+import './src/partials/header.html';
+import './src/partials/navbar.html';
+
+// dependências
+import uiRouter from 'angular-ui-router';
+
+export default angular.module('app', [uiRouter]);
+```
+
+]

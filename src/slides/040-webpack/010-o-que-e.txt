@@ -1,0 +1,18 @@
+layout: false
+
+# Webpack
+
+.left-column[
+
+#### - o que é
+
+]
+
+.right-column[
+
+### * funciona,ento parecido com browserify (node.js / CommonJs)
+### * utilização de um arquivo JS para configuração
+### * processa assets nativamente
+### * permite criação de pedaços de códigos que são carregados nativamente
+
+]

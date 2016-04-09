@@ -1,0 +1,36 @@
+# Introdução
+
+
+.left-column[
+
+#### - o que são
+#### - o problema
+
+]
+
+.right-column[
+
+```xml
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/three.js"></script>
+<script src="/js/minha-lib.js"></script>
+<script src="/js/outra-lib.js"></script>
+<script src="/js/main.js"></script>
+```
+
+Problemas:
+
+.list[
+
+* Conflito no namespace global
+* Ordem de carregamento importa e é definida no HTML
+* As dependências dos módulos não são explícitas
+* Desenvolvedor quer trabalhar com pequenos arquivos JS para organizar o base de códigos
+* Deploy exige código minimizado em uma ou poucas requisições HTTP
+
+]
+
+Conforme a quantidade de código JS cresce fica mais difícil gerenciar os módulos e suas dependências.
+
+]

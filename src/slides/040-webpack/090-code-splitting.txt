@@ -1,0 +1,41 @@
+.left-column[
+
+## Webpack
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+#### - exemplo avançado
+#### - code splitting
+
+]
+
+.right-column[
+
+#### code splitting permite definir partes do código que devem ser carregadas dinamicamente (ficam fora do bundle inicial) usando AMD:
+
+```javascript
+import $ from 'jquery';
+
+// ponto de separação
+require.ensure(['some-big-library'], (require) => {
+  // todo o código dentro do callback
+  // e tudo que for importado ficará num arquivo
+  const library = require('some-big-library');
+  $('foo').click(() => library.doSomething());
+});
+
+```
+
+#### tudo dentro do callback do `require.ensure` ficará num bundle separado que só será carregado através de AJAX quando a função for executada:
+
+```bash
+bundle.js
+|- jquery.js
+|- index.js // our main file
+chunk1.js
+|- some-big-libray.js
+|- index-chunk.js // the code in the callback
+```
+
+]

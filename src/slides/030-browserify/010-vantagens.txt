@@ -1,0 +1,32 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+
+]
+
+.right-column[
+
+#### Em 2009 também chegou o Node.js e com o tempo:
+
+.list[
+
+* Popularização do Node.js
+* Pacotes do NPM seumultiplicam
+* Uso do CommonJs em vez de AMD // `var lib = require('lib')`
+
+]
+
+#### Então surgiu o browserify com as vantagens:
+
+.list[
+
+* Permite utilização de módulos do padrão CommonJS (do node) no navegador (mais simples)
+* Permite utilização de pacotes do npm no navegador (baterias inclusas)
+* Recompila bundle automaticamente durante dev
+* Sistema de plugins
+
+]
+
+]

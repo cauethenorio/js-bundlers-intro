@@ -1,0 +1,24 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+#### - exemplo
+#### - source maps
+
+]
+
+.right-column[
+
+Opção `--debug` Gera o bundle com um source map incluso:
+```bash
+browserify --debug main.js -o bundle.js
+```
+
+O pacote `exorcist` pode ser usado para extrair o source-map de dentro do js:
+
+```bash
+browserify main.js --debug | exorcist bundle.js.map > bundle.js
+```
+
+]

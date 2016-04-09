@@ -1,0 +1,33 @@
+# Webpack
+
+.left-column[
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+#### - exemplo avançado
+
+
+]
+
+
+#### Continuação...
+
+```javascript
+            {
+                test: /\.styl$/,
+                loader: 'style!css!stylus'
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css'
+            },
+            {
+                test: /partials\/.+\.html$/,
+                loader: 'ngtemplate?relativeTo=/app/!html'
+            }
+        ]
+    },
+    devtool: 'source-map'
+}
+```

@@ -1,0 +1,37 @@
+# Webpack
+
+.left-column[
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+
+]
+
+.right-column[
+
+#### Instalação da dependência
+
+```bash
+npm init -y
+npm install jquery --save
+```
+
+#### src/index.js
+```javascript
+var $ = require('jquery');
+$('body').html('Hello');
+```
+
+#### webpack.config.js
+```javascript
+module.exports = {
+    entry:  './src',
+    output: {
+        path:     'dist',
+        filename: 'bundle.js',
+    },
+};
+```
+
+]

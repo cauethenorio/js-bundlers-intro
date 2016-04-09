@@ -1,0 +1,39 @@
+# Webpack
+
+.left-column[
+
+#### - o que é
+#### - bundle de assets
+#### - exemplo de config
+
+]
+
+.right-column[
+
+#### index.html
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My title</h1>
+    <a>Click me</a>
+
+    <script src="builds/bundle.js"></script>
+</body>
+</html>
+```
+
+#### criação do bundle:
+
+```bash
+$ webpack
+Hash: d41fc61f5b9d72c13744
+Version: webpack 1.12.14
+Time: 301ms
+    Asset    Size  Chunks             Chunk Names
+bundle.js  268 kB       0  [emitted]  main
+   [0] ./src/index.js 53 bytes {0} [built]
+    + 1 hidden modules
+```
+
+]

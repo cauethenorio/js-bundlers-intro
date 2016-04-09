@@ -1,0 +1,38 @@
+.left-column[
+
+## Browserify
+
+#### - vantagens
+#### - exemplo
+#### - source maps
+#### - mais de um bundle
+
+]
+
+.right-column[
+
+O plugin `factor-bundle` permite a criação de mais de um bundle, passando diferente módulos de entrada e salvando em um bundle separado as dependências compartilhadas por mais de um bundle:
+
+```bash
+$ browserify page-one.js \
+           page-two.js \
+           -p [ factor-bundle \
+              -o bundles/page-one.js
+              -o bundles/page-two.js ] \
+           -o bundle/common.js
+```
+
+E assim podemos carregar o bundle de cada página separadamente:
+````html
+<script src="/bundle/common.js"></script>
+<script src="/bundle/page-one.js"></script>
+````
+
+````html
+<script src="/bundle/common.js"></script>
+<script src="/bundle/page-two.js"></script>
+````
+
+O plugin `partition-bundle` permite a separação de bundles e o carregamento dinâmico de bundles quando algum módulo contido é solicitado.
+
+]

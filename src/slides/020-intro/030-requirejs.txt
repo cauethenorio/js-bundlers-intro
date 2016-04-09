@@ -1,0 +1,36 @@
+# Introdução
+
+
+.left-column[
+
+#### - o que são
+#### - o problema
+#### - require.js
+
+]
+
+.right-column[
+
+Em 2009 @jrburke começou o require.js tentando botar ordem na bagunça:
+
+.list[
+
+* Padrão AMD (Asynchronous Module Definition)
+* Módulos com ID (dependências explícitas)
+* Carregamento dinâmicos dos módulos
+* Primeiro bundler: r.js
+
+]
+
+]
+
+#### Definição de módulo no padrão AMD
+
+```javascript
+// chamando a função 'define' com o ID do módulo e suas dependências
+define('myModule', ['dep1', 'dep2'], function (dep1, dep2) {
+
+    //define o valor do módulo retornando um valor
+    return function () {};
+});
+```

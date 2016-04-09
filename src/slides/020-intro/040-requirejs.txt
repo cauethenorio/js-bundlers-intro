@@ -1,0 +1,36 @@
+# Introdução
+
+
+.left-column[
+
+#### - o que são
+#### - o problema
+#### - require.js
+
+]
+
+.right-column[
+
+#### Como o r.js funcionava
+
+
+
+Criação de arquivo de configuração (por exemplo build.js):
+```javascript
+({
+    baseUrl: ".",
+    paths: {
+        jquery: "some/other/jquery"
+    },
+    name: "main",
+    out: "main-built.js"
+})
+```
+
+E então o arquivo de configuração era usado no bundler:
+
+```bash
+$ node r.js -o build.js
+```
+
+]

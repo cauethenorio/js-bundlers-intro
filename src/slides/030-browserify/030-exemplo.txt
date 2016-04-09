@@ -1,0 +1,30 @@
+## Browserify
+
+.left-column[
+
+#### - vantagens
+#### - exemplo
+
+]
+
+.right-column[
+
+Criação do bundle a partir do arquivo `main.js`
+
+```bash
+browserify main.js -o bundle.js
+```
+
+Todos os módulos necessários para a execução de `main.js` são incluídos no `bundle.js`.
+
+```bash
+- main.js
+  +-- colors.js
+      +-- node_modules/jquery/dist/jquery.js
+
+V
+
+- bundle.js
+```
+
+]

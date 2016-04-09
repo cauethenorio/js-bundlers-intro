@@ -1,0 +1,17 @@
+layout: false
+
+# Introdução
+
+.left-column[
+
+#### - o que são
+
+]
+
+.right-column[
+
+### * pacotes do NPM
+### * unificadores de módulos (criam um bundle/arquivo único) a partir de vários módulos
+### * podem processar o código durante o processo
+
+]
